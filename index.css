@@ -1,0 +1,10 @@
+#canvas {
+    background-color: salmon;
+    margin: auto;
+}
+.control {
+    text-align: center;
+    background-color: sandybrown;
+    border: 2px solid;
+    border-radius: 5px;
+}
