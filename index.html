@@ -7,29 +7,31 @@
     <title>Canvas</title>
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="row">
-        <div class="controls col-3">
-              <div class="control p-1" id="set_32x32" > 32x32</div>
-              <div class="control p-1"  id="set_4x4" > 4x4</div>
-              <div class="control p-1" id="set_png" > img</div> 
-              
-    </div>
-    <div class='tools'>
-            <div class="tools__item tools__pen">pencil</div>
-            <div class="tools__item tools__paint-bucket">paint bucket</div>
-            <div class="tools__item tools__swap-color">swap color</div>
-            <div class="tools__item">line</div>
-    </div>
-    <div class="color__picker">
-        <input type="color" id="primary-color" value="#FF0000">
-        <input type="color" id="secondary-color" value="#00FF00">
-    </div>
-    <div class="col-9">
-            <canvas id="canvas" class="d-block mx-auto" width="512" height="512">do not support</canvas>
-        </div>
-    </div>
+        <div class="row">
+                <div class="controls col-3">
+                    <div class="images m-2 p-3">
+                        <div class="control p-2" id="set_32x32" ><i class="fa fa-picture-o p-1" aria-hidden="true"></i> 32x32</div>
+                        <div class="control p-2"  id="set_4x4" ><i class="fa fa-picture-o p-1" aria-hidden="true"></i> 4x4</div>
+                        <div class="control p-2" id="set_png" ><i class="fa fa-picture-o p-1" aria-hidden="true"></i> img</div>
+                    </div>
+                    <div class="tools m-2 p-3">
+                        <div class="tools__item tools__pen active"><i class="fa fa-pencil p-2" aria-hidden="true"></i>Pencil</div>
+                        <div class="tools__item tools__paint-bucket"><i class="fa fa-flask p-2" aria-hidden="true"></i>Fill-bucket</div>
+                        <div class="tools__item tools__take-color"><i class="fa fa-eyedropper p-2" aria-hidden="true"></i>Choose color</div>
+                        <div class="tools__item"><i class="fa fa-long-arrow-right p-2"></i>line</div>
+                    </div>  
+                    <div class="color__picker m-2 p-3">
+                        <div class="color__picker__item m-1"><input type="color" id="primary-color" value="#FF0000">Primary</div>
+                        <div class="color__picker__item m-1" ><input type="color" id="secondary-color" value="#00FF00">Secondary</div>
+                    </div> 
+                </div>
+                <div class="col-9 canvas">
+                    <canvas id="canvas" class="d-block mx-auto" width="512" height="512">do not support</canvas>
+                </div>
+            </div>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,10 +1,26 @@
 #canvas {
-    background-color: salmon;
+    background-color: gray;
     margin: auto;
 }
-.control {
-    text-align: center;
-    background-color: sandybrown;
-    border: 2px solid;
-    border-radius: 5px;
+.images ,
+.tools ,
+.color__picker
+{
+    border-radius: 1px;;
+    box-shadow: 0px 1px 1px 1px grey; 
+}
+.control:hover,
+.tools__item:hover,
+.color__picker__item:hover {
+    background-color: gray;
+}
+#primary-color,
+#secondary-color {
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 17px;
+    padding: 0;  
+}
+.active {
+    background-color: slategray;
 }
